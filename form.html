@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            background-color: rgb(121, 216, 233);
+            margin: 2px;
+            padding: 2px;
+        }
+    </style>
+</head>
+<body>
+        <h2>Registration Form</h2>
+        <label for="">Username:</label>
+        <input type="text" maxlength="6"  pattern="[A-Za-z]{6}">
+        <br><br>
+        <label for="">E-mail Address:</label>
+        <input type="email" pattern="[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" required>
+        <br><br>
+        <label for="">Date Of Birth</label>
+        <input type="date">(yyyy-mm-dd)
+        <br><br>
+        <label for="">HTML Experience Years:</label>0
+        <input type="range">100 years
+        <br><br>
+        <label for="">Gender</label>
+        <br>
+        <input type="radio">
+        <label for="">Male</label>
+        <br>
+        <input type="radio">
+        <label for="">Female</label>
+        <br><br>
+
+        <label for="">Password:</label>
+        <input type="password"  maxlength="6" required><br><br>
+        <label for="">Telephone Number:</label>
+        <input type="number" maxlength="10" required >
+        <br><br>
+        <p>Languages Known:</p>
+        <input type="checkbox"
+        <label for="">C</label>
+        <br>
+        <input type="checkbox">
+        <label for="">C++</label><br>
+        <input type="checkbox">
+        <label for="">Python</label>
+        <br>
+        <p>Preferred Courses:</p>
+        <label>Networks</label>
+        <input type="checkbox">
+        <label>Web Programming</label>
+        <input type="checkbox">
+        <label>Data Structures</label>
+        <input type="checkbox">
+        <label>OS</label>
+        <input type="checkbox">
+        <br>
+        <p> How many hours you study everyday?</p>
+        <label>1-3 hours</label>
+        <input type="radio">
+        <label>4-5 hours</label>
+        <input type="radio">
+        <label>more than 6 hours</label>
+        <input type="radio">
+        <br><br>
+        <label for="">Personal Page Url</label>
+        <input type="url" placeholder="HTTP://domain.com" required>
+        <br>
+        <br>
+        <label for="">Address</label>
+        <br>
+        <textarea cols="30" rows="5" required></textarea>
+        <br>
+        <button>Submit</button>
+        <button>Reset</button>
+    </form>
+</body>
+</html>

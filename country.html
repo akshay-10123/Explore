@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Capitals of Countries</title>
+        <script language="javascript">
+            function capital() {
+                var x = document.getElementById("myselect").value;  // Corrected method name
+                var capital = "Please select any country";
+                
+                if(x == "india") {
+                    capital = "NEW DELHI";
+                }
+                if(x == "china") {
+                    capital = "BEIJING";
+                }
+                if(x == "pakistan") {
+                    capital = "ISLAMABAD";
+                }
+                if(x == "bangladesh") {
+                    capital = "DHAKA";
+                }
+                if(x == "japan") {
+                    capital = "TOKYO";
+                }
+                if(x == "select") {
+                    capital = "Please select any country";
+                }
+                
+                document.getElementById("capt").innerHTML = capital;  // Corrected method name
+            }
+        </script>
+    </head>
+    <body>
+        <form name="frm1">
+        <br/>
+        <center>
+        Select a Country : <select id="myselect" onchange="capital()">
+        <option value="select">--SELECT--</option>
+        <option value="india">INDIA</option>
+        <option value="china">CHINA</option>
+        <option value="pakistan">PAKISTAN</option>
+        <option value="bangladesh">BANGLADESH</option>
+        <option value="japan">JAPAN</option>
+        </select>
+        <br/>
+        <br/>
+        <p style="color:green; font-size:50px;">Capital is :</p> <p
+        style="color:red; font-weight:bold; fontsize:50px;"id="capt"></p>
+        </center>
+        </form>
+        </body>
+        </html>

@@ -1,0 +1,100 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Box Model</title>
+<style>
+.container {
+  border: 5px #265e8c solid;
+  width: 100%;
+  height: 100%;
+}
+.banner {
+  border: 5px #8f08a1 solid;
+  margin: 10px;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.nav {
+  border: 5px #2de610 solid;
+  width: 150px;
+  height: 200px;
+  float: left;
+  margin: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.content {
+  border: 5px #c78108 solid;
+  position: relative;
+  width: 85%;
+  height: 250px;
+  float: right;
+  margin: 5px;
+  margin-left: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.footer {
+  border: 5px #8f08a1 solid;
+  margin: 10px;
+  width: 100%;
+  height: 70px;
+  margin-top: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <h4>#container</h4>
+  <p style="text-align: center;">scholership program for child</p>
+
+  <div class="banner">
+    <h4>#banner</h4>
+    <p>this will help intelligent minds to grow up</p>
+  </div>
+
+  <div class="nav">
+    <h4>#nav</h4>
+    <p>Navigate through our site:</p>
+    <ul style="padding: 0; margin: 0; list-style: none;">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">facilities</a></li>
+    </ul>
+  </div>
+
+  <div class="content">
+    <h2>Enter your details to enroll</h2>
+    <form action="#" method="post">
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" name="name" placeholder="Your name" required style="width: 100%; box-sizing: border-box;"><br>
+      <label for="email">Email:</label><br>
+      <input type="email" id="email" name="email" placeholder="Your email" required style="width: 100%; box-sizing: border-box;"><br>
+
+      <label for="message">phone number</label><br>
+      <input type="number"  maxlength="10" required>
+
+      <button type="submit" style="width: 100%; box-sizing: border-box;">Submit</button>
+    </fo  rm>
+  </div>
+
+  <div class="footer">
+    <h4>#footer</h4>
+    <p>&copy; go to top</p>
+  </div>
+
+</div>
+</body>
+</html>

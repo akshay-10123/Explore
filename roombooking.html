@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hotel Room Booking System</title>
+    <link rel="stylesheet" href="roombooking.css">
+</head>
+<body>
+    <header>
+        <h1>Hotel Room Booking System</h1>
+    </header>
+    <main>
+        <section id="bookingForm">
+            <h2>Book a Room</h2>
+            <form id="bookingForm">
+                <label for="checkinDate">Check-in Date:</label>
+                <input type="date" id="checkinDate" name="checkinDate" required>
+                
+                <label for="checkoutDate">Check-out Date:</label>
+                <input type="date" id="checkoutDate" name="checkoutDate" required>
+                
+                <label for="roomType">Room Type:</label>
+                <select id="roomType" name="roomType" required>
+                    <option value="">Select Room Type</option>
+                    <option value="single">Single</option>
+                    <option value="double">Double</option>
+                    <option value="suite">Suite</option>
+                </select>
+                
+                <button type="submit">Book Now</button>
+            </form>
+        </section>
+        <section id="bookingStatus">
+            <h2>Booking Status</h2>
+            <div id="bookingDetails">
+                <!-- Booking status updates will appear here -->
+            </div>
+        </section>
+        <section>
+            <h2>personal details of the costumer</h2>
+            <form action="details form">
+                <label for="name ">name</label>
+                <input type="name"  required>
+                <label for="email id">email id</label>
+                <input type="email id" required> 
+                <label for="age">age</label>
+                <input type="text">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Hotel Room Booking System</p>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>

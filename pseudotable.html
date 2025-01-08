@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<style>
+p:first-of-type{
+border: 3px dotted orangered;
+}
+p:last-of-type{
+    border: 3px dotted rgb(115, 255, 0);
+}
+p:nth-of-type(1){
+border: 3px dotted rgb(255, 0, 234);
+}
+p:nth-of-type(3n+0){
+border: 3px dotted rgb(0, 238, 255);
+}
+</style>
+</head>
+<body>
+<div id="div1" style="border:2px solid red;">
+<h3>Heading Text</h3>
+<p>Paragraph Text</p>
+<p>Paragraph Text</p>
+<p>Paragraph Text</p>
+</div><br><br>
+<div id="div2" style="border:2px solid green;">
+<p>Paragraph Text</p>
+<p>Paragraph Text</p>
+</div><br><br>
+<div id="div3" style="border:2px solid blue;">
+<p>Paragraph Text</p>
+</div>
+</body>

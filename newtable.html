@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Types</title>
+    <style>
+         .p1{
+             font-weight: bold;
+             font-family: 'Times New Roman', Times, serif;
+             line-height: 2.0;
+            }
+         table,td,th{
+            border: 1px solid black;
+            border-collapse: collapse;
+         }
+         td{
+            background-color: grey;
+         }
+    </style>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<table >
+    <tr> <th rowspan="9" style="background-color: cornflowerblue;">Department</th>
+        <td rowspan="3" style="background-color: forestgreen;">sem1</td>
+        <td>subject A</td>
+        <td rowspan="3" colspan="2">120 boys</td>
+    </tr>
+    <tr> <td>Subject B</td></tr>
+    <tr> <td>Subject C</td></tr>
+    <tr>
+         <td rowspan="3" style="background-color: forestgreen;">Sem2</td>
+        <td>Subject D</td>
+        <td rowspan="3">60boys</td>
+        <td rowspan="3">60girls</td>
+    </tr>
+    <tr> <td>Subject E</td></tr>
+    <tr> <td>Subject F</td></tr>
+    <tr><td rowspan="3" style="background-color: forestgreen;">Sem3</td>
+        <td>Subject G</td>
+        <td rowspan="3">60boys</td>
+        <td rowspan="3">60girls</td>
+    </tr>
+    <tr> <td>Subject H</td></tr>
+    <tr> <td>Subject I</td></tr>
+</table>
+</body>
+</html>
